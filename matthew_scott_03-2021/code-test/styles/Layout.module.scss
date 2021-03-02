@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+.layout {
+  .logoHeader {
+    border-bottom: 2px solid $color-black;
+    width: 100%;
+
+    > img {
+      display: block;
+      height: 50px;
+      margin: 10px auto;
+    }
+  }
+
+  .footer {
+    background-color: $color-black;
+    text-align: center;
+    width: 100%;
+
+    .footerText {
+      color: $color-white;
+      font-style: italic;
+      padding: 10px 0;
+    }
+  }
+}
