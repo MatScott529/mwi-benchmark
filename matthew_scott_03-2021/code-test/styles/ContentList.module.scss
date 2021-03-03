@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+.contentList {
+  display: flex;
+  justify-content: space-between;
+
+  .contentSection {
+    flex-basis: 30%;
+
+    .placeholderImage {
+      background-color: $color-gray__light;
+      height: 100px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contentList {
+    flex-direction: column;
+
+    .contentSection {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
