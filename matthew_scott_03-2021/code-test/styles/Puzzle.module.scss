@@ -1,8 +1,14 @@
 @import "./variables.scss";
 
 .puzzleWrapper {
+  margin-bottom: 100px;
+
   p {
     color: $color-black;
+
+    a {
+      font-weight: 700;
+    }
   }
 
   .mergeError {

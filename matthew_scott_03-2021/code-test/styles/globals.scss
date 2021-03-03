@@ -11,7 +11,7 @@ body {
 
 h1 {
   color: $color-black;
-  font-size: 40px;
+  font-size: 55px;
   font-weight: 400;
   text-decoration: underline;
   text-transform: uppercase;
@@ -19,7 +19,9 @@ h1 {
 
 h2 {
   color: $color-gray__main;
+  font-size: 30px;
   font-weight: 400;
+  margin: 20px 0;
 }
 
 a {
@@ -32,8 +34,9 @@ a {
 }
 
 p {
-  letter-spacing: 1px;
-  line-height: 1.3;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 * {
