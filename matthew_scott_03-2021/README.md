@@ -33,6 +33,7 @@ Personality Result - #9w1
 
 ### Code Test
 
-Any details you'd like to mention about your code test.
+- Regarding the puzzle section, the README.md used the word object but I used an array of strings as this seemed to make sense for the data give. I can redo this with JS objects if need be.
+- I did not explicitaly add classes to all elements as it seemed like over kill with module class wrappers.
 
 ---
