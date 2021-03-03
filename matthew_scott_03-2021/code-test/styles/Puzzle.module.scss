@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+.puzzleWrapper {
+  p {
+    color: $color-black;
+  }
+
+  .mergeError {
+    color: $color-red;
+  }
+}

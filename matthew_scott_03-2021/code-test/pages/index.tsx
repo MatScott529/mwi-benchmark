@@ -6,21 +6,26 @@ import { sampleContentSectionData } from '../utils/cms-data'
 import ContactForm from '../components/ContactForm'
 import ContentList from '../components/ContentList'
 import Layout from '../components/Layout'
+import Puzzle from '../components/Puzzle'
 
 type Props = {
   cmsSections: ContentSection[]
 }
 
 const Contact = ({ cmsSections }: Props) => (
-    <Layout>
-      <div className="fixedWidth">
-        <h1>Heading One</h1>
-        <ContentList cmsSections={cmsSections} />
-      </div>
-      <div>
-        <ContactForm />
-      </div>
-    </Layout>
+  <Layout>
+    <div className="fixedWidth">
+      <h1>Heading One</h1>
+      <ContentList cmsSections={cmsSections} />
+    </div>
+    <div>
+      <ContactForm />
+    </div>
+    <div className="fixedWidth">
+      <h1>Heading One</h1>
+      <Puzzle />
+    </div>
+  </Layout>
 )
 
 export const getStaticProps: GetStaticProps = async () => {
