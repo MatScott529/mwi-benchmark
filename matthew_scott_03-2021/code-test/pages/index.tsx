@@ -2,6 +2,8 @@ import { GetStaticProps } from 'next'
 
 import { ContentSection } from '../utils/cms-data-interface'
 import { sampleContentSectionData } from '../utils/cms-data'
+
+import ContactForm from '../components/ContactForm'
 import ContentList from '../components/ContentList'
 import Layout from '../components/Layout'
 
@@ -11,10 +13,13 @@ type Props = {
 
 const Contact = ({ cmsSections }: Props) => (
     <Layout>
-      <main className="fixedWidth">
+      <div className="fixedWidth">
         <h1>Heading One</h1>
         <ContentList cmsSections={cmsSections} />
-      </main>
+      </div>
+      <div>
+        <ContactForm />
+      </div>
     </Layout>
 )
 

@@ -1,0 +1,59 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.contactFormWrapper {
+  background-color: $color-gray__light;
+  padding: 25px 15px 50px;
+  width: 100%;
+
+  .contactFormTitle {
+    color: $color-white;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .contactForm,
+  .submittedValues {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+    max-width: 400px;
+  }
+
+  .contactForm {
+    label {
+      align-items: flex-end;
+      color: $color-white;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        color: $color-red;
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+
+    input,
+    textarea {
+      border: none;
+      margin: 5px 0 10px;
+    }
+
+    input[type="email"],
+    input[type="text"] {
+      padding: 10px 0 10px 5px;
+    }
+
+    input[type="submit"] {
+      @include buttonPrimary;
+
+      align-self: flex-start;
+    }
+  }
+
+  .submittedValues p {
+    color: $color-white;
+  }
+}

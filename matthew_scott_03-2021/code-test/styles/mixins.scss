@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+// Button
+@mixin buttonPrimary {
+  background-color: $color-black;
+  border: 1px solid $color-black;
+  color: $color-white;
+  display: inline-block;
+  letter-spacing: 1px;
+  min-width: 100px;
+  padding: 10px;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+    cursor: pointer;
+  }
+}

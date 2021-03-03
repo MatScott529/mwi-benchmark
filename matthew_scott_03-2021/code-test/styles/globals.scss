@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./mixins.scss";
 
 html,
 body {
@@ -26,16 +27,7 @@ a {
   text-decoration: none;
 
   &.linkAsButton {
-    background-color: $color-black;
-    border: 1px solid $color-black;
-    color: $color-white;
-    display: inline-block;
-    padding: 10px;
-
-    &:hover {
-      background-color: $color-white;
-      color: $color-black;
-    }
+    @include buttonPrimary;
   }
 }
 
@@ -53,5 +45,5 @@ p {
 .fixedWidth {
   margin: 0 auto;
   max-width: 1280px;
-  padding: 0 15px;
+  padding: 0 15px 40px;
 }
